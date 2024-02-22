@@ -1,0 +1,42 @@
+.header {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 3rem;
+	background-color: var(--clr-accent);
+	z-index: 1000;
+	transition: top .5s ease-in-out, var(--transition);
+}
+
+.logo {
+	color: var(--clr-primary);
+	font-size: 45px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.header>p {
+	color: var(--clr-primary);
+	font-family: var(--ff-rubic);
+	font-size: 1.5rem;
+	cursor: default;
+}
+
+@media (max-width: 800px) {
+	.header {
+		height: 40px;
+		padding: 0 1rem
+	}
+
+	.logo {
+		font-size: 20px;
+	}
+
+	.header>p {
+		font-size: 1rem;
+	}
+}

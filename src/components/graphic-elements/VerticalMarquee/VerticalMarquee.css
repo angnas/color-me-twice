@@ -1,0 +1,26 @@
+.marquee {
+	grid-area: 1 / 1 / 13 / 2;
+	pointer-events: none;
+}
+
+.marquee p {
+	transform: rotate(-90deg);
+	font-size: 2rem;
+	height: 100vh;
+	width: auto;
+	font-family: RR;
+	font-weight: 400;
+	font-style: normal;
+	text-transform:uppercase;
+	transition: var(--transition);
+}
+
+@media (max-width: 800px) {
+	.marquee {
+		grid-area: 10 / 1 / 11 / 6;
+		transform: rotate(90deg) translateY(-100vw);
+		width: 2rem;
+		font-size: 1rem;
+	}
+
+}

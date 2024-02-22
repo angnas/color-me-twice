@@ -1,0 +1,117 @@
+@font-face {
+  font-family: RR;
+  src: url("./assets/Righteous-Regular.ttf") format("truetype");
+}
+
+
+:root {
+  --clr-accent: black;
+  --clr-primary: white;
+  --ff-rubic: "Rubik Mono One", monospace;
+  --ff-righteous: 'Righteous', sans-serif;
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --size-border: 3px;
+
+  --transition: background-color .5s ease-in-out 1s, color .5s ease-in-out 1s, border-color .5s ease-in-out 1s;
+  /* transition: var(--transition) */
+  --mq-sm: 480px
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+b,
+span,
+p {
+  transition: var(--transition);
+  margin: 0;
+  color: var(--clr-accent);
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: var(--ff-rubic);
+}
+
+p {
+  font-family: var(--ff-montserrat);
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+
+@media screen and (min-width: 36em) {
+  p {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  h1 {
+    font-size: 4rem;
+  }
+}

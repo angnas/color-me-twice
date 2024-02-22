@@ -1,0 +1,107 @@
+.primary-hex-display,
+.accent-hex-display {
+	padding: 1rem;
+	height: 100%;
+	border-radius: 1.5rem;
+	transition: var(--transition);
+}
+
+.accent-hex-display>h1,
+.primary-hex-display>h1 {
+	font-size: 3rem;
+}
+
+.accent-hex-display>p,
+.primary-hex-display>p {
+	font-size: 3rem;
+	font-family: RR;
+	font-size: 1.2rem;
+}
+
+.hex-domino {
+	height: 7rem;
+	margin-bottom: 1rem;
+}
+
+.hex-text {
+	font-size: 4rem;
+}
+
+.primary-hex-display {
+	border: solid var(--clr-accent) var(--size-border);
+	grid-area: 2 / 9 / 13 / 12;
+}
+
+.accent-hex-display {
+	background-color: var(--clr-accent);
+	grid-area: 2 / 2 / 13 / 5;
+}
+
+
+.accent-hex-display>h1,
+.accent-hex-display>p {
+	color: var(--clr-primary);
+}
+
+.primary-hex-display>h1,
+.primary-hex-display>p {
+	color: var(--clr-accent);
+}
+
+@media (max-width: 1400px) {
+	.title-textAI>h1 {
+		font-size: 2rem;
+	}
+
+	.accent-hex-display>h1,
+	.primary-hex-display>h1 {
+		font-size: 2.5rem;
+	}
+
+	.accent-hex-display>p,
+	.primary-hex-display>p {
+		font-size: 1rem;
+	}
+
+}
+
+@media (max-width: 1100px) {
+
+	.accent-hex-display>h1,
+	.primary-hex-display>h1 {
+		font-size: 2rem;
+	}
+
+	.accent-hex-display>p,
+	.primary-hex-display>p {
+		font-size: .9rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.primary-hex-display {
+		grid-area: 1 / 1 / 5 / 6;
+	}
+
+	.accent-hex-display {
+		grid-area: 6 / 1 / 10 / 6;
+	}
+
+	.hex-domino {
+		display: none;
+	}
+
+	.accent-hex-display>p,
+	.primary-hex-display>p {
+		font-size: 1rem;
+	}
+
+	.hex-text {
+		font-size: 2rem;
+	}
+
+	.accent-hex-display>h1,
+	.primary-hex-display>h1 {
+		font-size: 3rem;
+	}
+}

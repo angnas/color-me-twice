@@ -1,0 +1,43 @@
+.plus {
+	width: 9vw;
+	height: 9vw;
+	position: absolute;
+
+
+	transform-origin: center center;
+	transform: translate(-50%, -50%) rotate(90deg);
+	top: 50%;
+	left: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.y {
+	transition: none;
+	height: 100%;
+	width: 15%;
+}
+
+.x {
+	transition: none;
+	content: '';
+	display: block;
+	width: 40%;
+	height: 30%;
+	margin: 0 -5%;
+}
+
+
+@media (min-width: 800px) {
+	.plus {
+		transform-origin: center center;
+		transform: translate(-50%, -50%) rotate(0deg);
+		width: 5vw;
+		height: 5vw;
+	}
+}
+
+
+/* Media queries for standard breakpoints */

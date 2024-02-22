@@ -1,0 +1,29 @@
+.title-textAI {
+	grid-area: 2 / 5 / 7 / 9;
+	border-left: solid 5px;
+	border-color: var(--clr-accent);
+	transition: var(--transition);
+	padding: 0 .5rem;
+}
+
+.title-textAI>h1 {
+	font-size: 2.5rem;
+}
+
+@media (max-width: 1400px) {
+	.title-textAI>h1 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	.title-textAI>h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.title-textAI {
+		display: none;
+	}
+}

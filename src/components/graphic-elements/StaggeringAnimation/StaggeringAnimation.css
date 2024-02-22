@@ -1,0 +1,61 @@
+.staggeringAnimation {
+	grid-area: 2 / 12 / 13 / 13;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+
+.staggering-content {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	cursor: pointer;
+	justify-content: flex-end;
+}
+
+.grid-square {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.small {
+	width: 23px;
+	height: 23px;
+}
+
+.square {
+	pointer-events: none;
+	position: relative;
+	background-color: var(--clr-accent);
+	font-size: 14px;
+	transition: var(--transition);
+}
+
+/* 100 - 85 - 65 - 45 - 25 */
+.squareOp-10 {
+	opacity: 10%;
+}
+
+.squareOp-25 {
+	opacity: 25%;
+}
+
+.squareOp-45 {
+	opacity: 45%;
+}
+
+.squareOp-75 {
+	opacity: 75%;
+}
+
+
+
+
+@media (max-width: 800px) {
+	.staggeringAnimation {
+		display: none;
+	}
+}

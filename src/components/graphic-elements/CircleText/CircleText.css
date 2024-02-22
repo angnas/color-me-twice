@@ -1,0 +1,45 @@
+.wrapper {
+	width: 10rem;
+	height: 10rem;
+	flex-shrink: 0;
+	position: absolute;
+	top: 80px;
+	right: 15px;
+	display: none;
+}
+
+.svg {
+	position: absolute;
+	animation: spin 30s infinite ease-in-out;
+}
+.wrapper:hover .svg{
+	animation-play-state: paused;
+}
+
+.svg__circle {
+	opacity: 0;
+}
+
+@keyframes spin {
+	from {
+		translate: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+
+
+  @media screen and (min-width: 60em) {
+	.wrapper {
+		width: 14rem;
+		height: 14rem;
+		position: relative;
+		transform: translate(0, -30%);
+		display: block;
+	}
+  }
+
+  

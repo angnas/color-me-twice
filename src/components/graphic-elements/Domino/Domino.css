@@ -1,0 +1,76 @@
+.domino-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.domino-brick {
+	background-color: var(--clr-accent);
+	width: 5%;
+	height: 80%;
+	margin: 0 5px;
+	transition: var(--transition);
+}
+
+.domino-box.hover-state .domino-brick0 {
+	animation: rotateAnimation 0.5s ease forwards;
+}
+
+.domino-box.hover-state .domino-brick1 {
+	animation: rotateAnimation 0.5s ease 0.1s forwards;
+}
+
+.domino-box.hover-state .domino-brick2 {
+	animation: rotateAnimation 0.5s ease 0.2s forwards;
+}
+
+.domino-box.hover-state .domino-brick3 {
+	animation: rotateAnimation 0.5s ease 0.3s forwards;
+}
+
+.domino-box.hover-state .domino-brick4 {
+	animation: rotateAnimation 0.5s ease 0.4s forwards;
+}
+
+.domino-box.hover-state .domino-brick5 {
+	animation: rotateAnimation 0.5s ease 0.5s forwards;
+}
+
+.domino-box.hover-state .domino-brick6 {
+	animation: rotateAnimation 0.5s ease 0.6s forwards;
+}
+
+.domino-box.hover-state .domino-brick7 {
+	animation: rotateAnimation 0.5s ease 0.7s forwards;
+}
+
+.domino-box.hover-state .domino-brick8 {
+	animation: rotateAnimation 0.5s ease 0.8s forwards;
+}
+
+.domino-box.hover-state .domino-brick9 {
+	animation: rotateAnimation 0.5s ease 0.9s forwards;
+}
+
+.domino-box.hover-state .domino-brick10 {
+	animation: rotateAnimation 0.5s ease 1s forwards;
+}
+.domino-box.hover-state .domino-brick11 {
+	animation: rotateAnimation 0.5s ease 1.1s forwards;
+}
+.domino-box.hover-state .domino-brick12 {
+	animation: rotateAnimation 0.5s ease 1.2s forwards;
+}
+
+@keyframes rotateAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(30deg);
+	}
+}
