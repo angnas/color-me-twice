@@ -1,3 +1,6 @@
+##Link of website
+https://color-me-twice.netlify.app 
+
 ## Our App:
 Color Me Twice has been designed to assist you in creating an 2 color palette for your upcoming web development project. By selecting two colors, Color Me Twice will provide you based on your choice of colors, a primary color and its accompanying accent shade, resulting in a visually cohesive two-color composition.
 
