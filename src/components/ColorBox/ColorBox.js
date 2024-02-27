@@ -1,7 +1,9 @@
 import "./ColorBox.css";
 // AlphaPicker BlockPicker ChromePicker CirclePicker CompactPicker GithubPicker HuePicker MaterialPicker PhotoshopPicker SketchPicker SliderPicker SwatchesPicker TwitterPicker
 import { CirclePicker } from "react-color";
+import { motion } from "framer-motion";
 import { useContext } from "react";
+import { useState } from "react";
 // same as in app, importing our context 
 import { Context } from "../../ContextProvider";
 
@@ -24,7 +26,26 @@ function ColorBox(props) {
 	return (
 		// prop.color default value white and black
 		<div className="color-box" style={{ backgroundColor: props.color }}>
-			<CirclePicker className="color-box__picker" color={color} onChange={handleOnChange} />
+			<motion.div
+			animate = {{
+				x: isAnimating ?  "5rem" : "-5rem",
+				rotate: isAnimating ?  180 : 0
+			}}
+			whileHover={{
+				scale: 1.5
+			}}
+			transition = {{
+				type: "spring",
+				stiffness: 60
+			}}
+			onClick={() => setIsAnimating(!isAnimating)}
+			>
+			<CirclePicker className="color-box__picker"
+			 color={color} onChange={handleOnChange} />
+
+			</motion.div>
+			
+		
 		</div>
 	);
 }

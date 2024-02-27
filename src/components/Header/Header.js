@@ -15,6 +15,12 @@ function Header() {
                 top: 3,
                 bottom:3
             }}
+            whileHover={{
+				scale: 2
+			}}
+			whileTap={{
+				scale: 1
+			}}
             >
                 <TbDroplet className="logo" />
                 <TbDropletFilled className="logo" />
